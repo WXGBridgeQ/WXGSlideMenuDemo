@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5F23A9FF-9DB7-48F0-9432-1D2EC23522C8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WXGSlideMenuDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>94D62081811FDDE297308FA10E2ADB7E08B79041</key>
+		<string>https://github.com/WXGBridgeQ/WXGSlideMenuDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WXGSlideMenuDemo(纯代码)/WXGSlideMenuDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>94D62081811FDDE297308FA10E2ADB7E08B79041</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WXGBridgeQ/WXGSlideMenuDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>94D62081811FDDE297308FA10E2ADB7E08B79041</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>94D62081811FDDE297308FA10E2ADB7E08B79041</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WXGSlideMenuDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
