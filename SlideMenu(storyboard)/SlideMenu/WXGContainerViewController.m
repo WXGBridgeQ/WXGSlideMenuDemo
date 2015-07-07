@@ -59,6 +59,9 @@
     self.menuContainerView.layer.transform = [self transformWithScale:scale];
     self.menuContainerView.alpha = 1 - scale;
     
+    // 控制菜单显示与否的状态
+    self.showMenu = scrollView.contentOffset.x < self.menuContainerView.frame.size.width;
+    
     // Fix for the UIScrollView paging-related issue
     // http://stackoverflow.com/questions/4480512/uiscrollview-single-tap-scrolls-it-to-top
     scrollView.pagingEnabled = scrollView.contentOffset.x < (scrollView.contentSize.width - CGRectGetWidth(scrollView.frame));
