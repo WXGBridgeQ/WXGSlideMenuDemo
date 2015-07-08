@@ -11,7 +11,9 @@
 
 @interface WXGMenuViewController : UITableViewController
 
-// 注册菜单点击事件，第一次选中时不做动画
-@property (nonatomic, copy) void(^menuDidClick)(WXGMenuItem *item, BOOL first);
+/**
+ * 注册菜单视图的点击事件
+ */
+@property (nonatomic, copy) void(^menuDidClick)(WXGMenuItem *item, BOOL animated);
 
 @end

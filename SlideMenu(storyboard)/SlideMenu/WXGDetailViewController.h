@@ -13,10 +13,14 @@
 
 @property (nonatomic, strong) WXGMenuItem *item;
 
-// 注册顶部hamburger按钮点击事件
-@property (nonatomic, copy) void(^hamburgerDidClick)();
+/**
+ * 注册顶部按钮的点击事件
+ */
+@property (nonatomic, copy) void(^leftBarButtonDidClick)();
 
-// 顶部hamburger按钮滚动效果
-- (void)rotateHamburgerWithScale:(CGFloat)scale;
+/**
+ * 实现顶部按钮的滚动效果
+ */
+- (void)rotateLeftBarButtonWithScale:(CGFloat)scale;
 
 @end

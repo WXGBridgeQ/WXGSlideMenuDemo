@@ -38,7 +38,7 @@ static const CGFloat kMenuWidth = 80;
 - (void)setupScrollView {
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     self.scrollView = scrollView;
-    scrollView.contentSize = CGSizeMake(CGRectGetWidth(scrollView.bounds) + kMenuWidth, CGRectGetHeight(scrollView.bounds));
+    scrollView.contentSize = CGSizeMake(CGRectGetWidth(scrollView.bounds) + kMenuWidth, 0);
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.bounces = NO;

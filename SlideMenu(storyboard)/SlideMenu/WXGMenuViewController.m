@@ -18,7 +18,6 @@
 
 @implementation WXGMenuViewController
 
-// 加载plist文件数据并转换为模型数组
 - (NSArray *)menuItems {
     if (!_menuItems) {
         NSArray *dicts = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"MenuItems" ofType:@"plist"]];
@@ -35,8 +34,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 默认选中菜单第一行，第一次选中时不做动画
-    self.menuDidClick(self.menuItems[0], YES);
+    // 去掉导航条下面的阴影效果的那条线
+    self.navigationController.navigationBar.clipsToBounds = YES;
+    
+    // 加载后默认点击第一行，让detailView显示第一行的内容
+    self.menuDidClick(self.menuItems[0], NO);
+    
+    // 为菜单的旋转设置锚点
+    self.view.layer.anchorPoint = CGPointMake(1, 0.5);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -55,7 +60,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (self.menuDidClick) {
-        self.menuDidClick(self.menuItems[indexPath.row], NO);
+        self.menuDidClick(self.menuItems[indexPath.row], YES);
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
